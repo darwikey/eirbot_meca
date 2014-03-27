@@ -1,0 +1,16 @@
+# Aversive configuration
+MCU = atmega32
+OPT = s
+FORMAT = ihex
+FORMAT_EXTENSION = hex
+MATH_LIB = -lm
+PRINTF_LDFLAGS = 
+CFLAGS += -D__STDIO_FDEVOPEN_COMPAT_12
+AVRDUDE_PROGRAMMER = stk200
+AVRDUDE_PORT = "/dev/parport0"
+PROGRAMMER = avarice
+AVARICE_PROGRAMMER = mkI
+AVARICE_PORT = "/dev/ttyS0"
+AVARICE_DEBUG_PORT = 1234
+MODULES = comm/uart comm/i2c_eirbot hardware/pwm devices/servo/multiservo base/time base/scheduler hardware/timer base/cirbuf debug/error base/math/fixed_point base/math/vect2
+

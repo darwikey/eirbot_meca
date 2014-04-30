@@ -53,19 +53,19 @@ int main(void)
 	switch (action)
 	  {
 	  case TIROIR_FERMER:
-	    multiservo_set(servo_tiroir, 1700);
+	    multiservo_set(servo_tiroir, 2400);
 	    break;
 	  case TIROIR_OUVERT:
-	    multiservo_set(servo_tiroir, 1000);
+	    multiservo_set(servo_tiroir, 1900);
 	    break;
 	  case TIROIR_DEVERSER:
-	    multiservo_set(servo_tiroir, 500);
+	    multiservo_set(servo_tiroir, 1200);
 	    break;
 	  case PEIGNE_OUVERT:
-	    multiservo_set(servo_peigne, 1700);
+	    multiservo_set(servo_peigne, 1800);
 	    break;
 	  case PEIGNE_FERMER:
-	    multiservo_set(servo_peigne, 800);
+	    multiservo_set(servo_peigne, 900);
 	    break;
 	  default:
 	    break;
